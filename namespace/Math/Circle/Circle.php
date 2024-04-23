@@ -1,4 +1,9 @@
 <?php
+
+namespace Math\Circle;
+
+use Math\Constant;
+
 require_once __DIR__ . '/../Constant.php';
 
 
