@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers; 
+namespace App\Http\Controllers;
+
+use App\Product;
 use User;
 
 class HomeController
@@ -9,6 +11,9 @@ class HomeController
     {
         $user = new User();
         $users = $user->getListUser();
-        return $users;
+
+        $product = new Product();
+        $products = $product->listProduct();
+        return $products;
     }
 }
